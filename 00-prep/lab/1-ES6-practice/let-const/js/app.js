@@ -37,7 +37,11 @@ function displayPics(){
   }
   console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `  to `let`.
+  
   // rando throws an error because it is a locally block-scoped variable to the while loop in displayPics(). When rando was declared with 'var', it is locally scoped to the function displayPics().
+
+  //the errors that were thrown were because const is a value that cannot be changed. I recognized that const is not useful for setting i in a for loop, or anytime that the variable will change or be reassigned. let was good for this. 
+
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
